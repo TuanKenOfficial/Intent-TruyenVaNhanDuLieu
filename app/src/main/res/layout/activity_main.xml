@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhập số N:"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        android:textStyle="normal"/>
+
+    <EditText
+        android:id="@+id/edtNhapN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt1"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:hint="Nhập số N > 0"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnUS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chuyển sang màn hình xử lý ước số"
+        android:layout_below="@id/edtNhapN"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kết quả là: "
+        android:layout_below="@id/btnUS"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/txtKQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kết quả"
+        android:layout_below="@id/txt2"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
